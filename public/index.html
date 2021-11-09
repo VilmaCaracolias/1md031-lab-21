@@ -1,1 +1,117 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+    <title>BurgerHeaven</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <header>
+        <h1>Välkommen till BurgerOnline </h1>
+
+    </header>
+    <main>
+        <section>
+            <h3>Select burgers </h3>
+            <h4> This is where you execute burger selection</h4>
+            <div style="float:left;" >
+
+                    <h5> Burger 1</h5>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3nEQwZzCdMrsnYce1-ZS7IGc1I08lkWEIRg&usqp=CAU"  style="width: 200px;">
+
+                <ul>
+                    <li>Svenskt kött</li>
+                    <li>130 kr</li>
+                </ul>
+
+
+            </div>
+            <div style="float:left;clear:right;" >
+
+                <h5> Burger 2</h5>
+                <img src="https://www.max.se/globalassets/images/burgers/burgers-frisco-burger.png?width=1160&height=652"  style="width: 300px;">
+                <ul>
+                    <li>Glutenfri</li>
+                    <li> Laktosfri</li>
+                    <li>135 kr</li>
+                </ul>
+            </div>
+            <div style="float:left;clear:right;">
+
+                <h5> Burger 3</h5>
+
+                <img src="https://cdn-bk-se-ordering.azureedge.net/media/tzdfpoe0/bk_kiosk_400x290_singel_crispychicken.png"  style="width: 200px;">
+                <ul>
+                    <li>Vegan</li>
+                    <li>100 kr</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section style="clear:both;" id="contact" >
+            <h7> Costumer information</h7>
+            <h6>This is where you provide necessary information</h6>
+            <h7>Delivery information</h7>
+
+
+                    <form>
+                        <p>
+                            <label for="name">Full name</label><br>
+                            <input type="text" id="name" name="fn" required="required" placeholder="First and last name">
+                        </p>
+
+                        <p>
+                            <label for="email">E-mail</label><br>
+                            <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                        </p>
+                        <p>
+                            <label for="street">Street</label><br>
+                            <input type="text" id="street" name="st" required="required" placeholder="street Name">
+                        </p>
+                        <p>
+                            <label for="number">Number</label><br>
+                            <input type="number" id="number" name="nu" required="required" placeholder="House number">
+                        </p>
+                        <p>
+                            <label for="payment">payment</label><be>
+                            <select id="payment" name="pay">
+                                <option>Card</option>
+                                <option>Swish</option>
+                                <option selected="selected">  Invoice </option>
+                                <option>Klarna</option>
+
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="gender">Gender</label><br>
+                            <input type="radio" id="female" name="gender" required="required">
+                            <label for="female">Female </label><br>
+                            <input type="radio" id="male" name="gender" required="required">
+                            <label for="male">Male </label><br>
+                            <input type="radio" id="nonbinary" name="gender" required="required">
+                            <label for="nonbinary">Non-binary </label><br>
+                            <input checked="checked" type="radio" id="notprovide" name="gender" required="required" >
+                            <label for="notprovide">Do not wish to provide </label><br>
+
+
+                        </p>
+
+
+
+                    </form>
+
+        </section>
+        <button type="send info">
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787__480.png" style="width: 20px;">
+            Submit the order
+        </button>
+    </main>
+    <hr>
+    <footer>
+        <h7> &copy;</h7>
+    </footer>
+</body>
+</html>
