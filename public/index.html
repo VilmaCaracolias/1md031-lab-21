@@ -1,62 +1,78 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>BurgerHeaven</title>
+
     <meta charset="utf-8"/>
 </head>
 <body>
     <header>
-        <h1>Välkommen till BurgerOnline </h1>
+        <div id="header" >
 
+        <img id="headerpic" src="https://thatsup.se/content/img/article/11/apr/uppsalas-b%C3%A4sta-barer.jpg">
+            <h1 id="headertext"> Welcome to BurgerOnline </h1>
+        </div>
     </header>
     <main>
-        <section>
-            <h3>Select burgers </h3>
-            <h4> This is where you execute burger selection</h4>
-            <div style="float:left;" >
+        <section id="burgers" >
 
-                    <h5> Burger 1</h5>
+            <div class="wrappers" >
+                <div class="burgershead">
+                <h3>Select burgers </h3>
+                <h4> This is where you execute burger selection</h4>
+                </div>
 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3nEQwZzCdMrsnYce1-ZS7IGc1I08lkWEIRg&usqp=CAU"  style="width: 200px;">
+            <div class="burger1" >
+
+                    <h3> Burger 1</h3>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3nEQwZzCdMrsnYce1-ZS7IGc1I08lkWEIRg&usqp=CAU" height="180" >
 
                 <ul>
-                    <li>Svenskt kött</li>
-                    <li>130 kr</li>
+                    <li>  Contains <span class="ingredients"> lactose & gluten  </span> </li>
+                    <li>  Price <span class="ingredients"> 145kr  </span> </li>
                 </ul>
 
 
             </div>
-            <div style="float:left;clear:right;" >
+            <div class="burger2" >
 
-                <h5> Burger 2</h5>
-                <img src="https://www.max.se/globalassets/images/burgers/burgers-frisco-burger.png?width=1160&height=652"  style="width: 300px;">
+                <h3> Burger 2</h3>
+                <img  src="https://gastrogate.com/thumbs/2000/files/31555/bc-burger-highres-10.jpg" height="180" >
                 <ul>
-                    <li>Glutenfri</li>
-                    <li> Laktosfri</li>
-                    <li>135 kr</li>
+
+                    <li>  Contains <span class="ingredients"> lactos & gluten  </span> </li>
+                    <li>Price <span class="ingredients">135kr</span> </li>
+
                 </ul>
             </div>
-            <div style="float:left;clear:right;">
 
-                <h5> Burger 3</h5>
+            <div class="burger3" >
 
-                <img src="https://cdn-bk-se-ordering.azureedge.net/media/tzdfpoe0/bk_kiosk_400x290_singel_crispychicken.png"  style="width: 200px;">
+                <h3> Burger 3</h3>
+
+                <img  src="https://joyfoodsunshine.com/wp-content/uploads/2017/04/black-bean-sweet-potato-veggie-burgers-1x1-1.jpg" height="180" >
                 <ul>
-                    <li>Vegan</li>
-                    <li>100 kr</li>
+
+                    <li>  Contains <span class="ingredients"> Gluten  </span> </li>
+                    <li>  Price <span class="ingredients"> 110kr  </span> </li>
+
                 </ul>
+            </div>
             </div>
         </section>
 
 
-        <section style="clear:both;" id="contact" >
-            <h7> Costumer information</h7>
-            <h6>This is where you provide necessary information</h6>
-            <h7>Delivery information</h7>
+        <section  id="contact" >
+            <div id="form">
+            <h3> Costumer information</h3>
+            <h4>This is where you provide necessary information</h4>
+            <h3>Delivery information</h3>
 
 
-                    <form>
+                    <form >
                         <p>
                             <label for="name">Full name</label><br>
                             <input type="text" id="name" name="fn" required="required" placeholder="First and last name">
@@ -75,18 +91,18 @@
                             <input type="number" id="number" name="nu" required="required" placeholder="House number">
                         </p>
                         <p>
-                            <label for="payment">payment</label><be>
+                            <label> payment</label><be>
                             <select id="payment" name="pay">
                                 <option>Card</option>
                                 <option>Swish</option>
                                 <option selected="selected">  Invoice </option>
                                 <option>Klarna</option>
 
-                            </select>
+                            </select> </be>
                         </p>
 
                         <p>
-                            <label for="gender">Gender</label><br>
+                            <label >Gender</label><br>
                             <input type="radio" id="female" name="gender" required="required">
                             <label for="female">Female </label><br>
                             <input type="radio" id="male" name="gender" required="required">
@@ -102,8 +118,10 @@
 
 
                     </form>
+            </div>
 
         </section>
+
         <button type="send info">
             <img src="https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787__480.png" style="width: 20px;">
             Submit the order
