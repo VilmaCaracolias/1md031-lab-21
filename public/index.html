@@ -1,135 +1,17 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <title>BurgerHeaven</title>
-
-    <meta charset="utf-8"/>
-</head>
-<body>
-    <header>
-        <div id="header" >
-
-        <img id="headerpic" src="https://thatsup.se/content/img/article/11/apr/uppsalas-b%C3%A4sta-barer.jpg">
-            <h1 id="headertext"> Welcome to BurgerOnline </h1>
-        </div>
-    </header>
-    <main>
-        <section id="burgers" >
-
-            <div class="wrappers" >
-                <div class="burgershead">
-                <h3>Select burgers </h3>
-                <h4> This is where you execute burger selection</h4>
-                </div>
-
-            <div class="burger1" >
-
-                    <h3> Burger 1</h3>
-
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3nEQwZzCdMrsnYce1-ZS7IGc1I08lkWEIRg&usqp=CAU" height="180" >
-
-                <ul>
-                    <li>  Contains <span class="ingredients"> lactose & gluten  </span> </li>
-                    <li>  Price <span class="ingredients"> 145kr  </span> </li>
-                </ul>
-
-
-            </div>
-            <div class="burger2" >
-
-                <h3> Burger 2</h3>
-                <img  src="https://gastrogate.com/thumbs/2000/files/31555/bc-burger-highres-10.jpg" height="180" >
-                <ul>
-
-                    <li>  Contains <span class="ingredients"> lactos & gluten  </span> </li>
-                    <li>Price <span class="ingredients">135kr</span> </li>
-
-                </ul>
-            </div>
-
-            <div class="burger3" >
-
-                <h3> Burger 3</h3>
-
-                <img  src="https://joyfoodsunshine.com/wp-content/uploads/2017/04/black-bean-sweet-potato-veggie-burgers-1x1-1.jpg" height="180" >
-                <ul>
-
-                    <li>  Contains <span class="ingredients"> Gluten  </span> </li>
-                    <li>  Price <span class="ingredients"> 110kr  </span> </li>
-
-                </ul>
-            </div>
-            </div>
-        </section>
-
-
-        <section  id="contact" >
-            <div id="form">
-            <h3> Costumer information</h3>
-            <h4>This is where you provide necessary information</h4>
-            <h3>Delivery information</h3>
-
-
-                    <form >
-                        <p>
-                            <label for="name">Full name</label><br>
-                            <input type="text" id="name" name="fn" required="required" placeholder="First and last name">
-                        </p>
-
-                        <p>
-                            <label for="email">E-mail</label><br>
-                            <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
-                        </p>
-                        <p>
-                            <label for="street">Street</label><br>
-                            <input type="text" id="street" name="st" required="required" placeholder="street Name">
-                        </p>
-                        <p>
-                            <label for="number">Number</label><br>
-                            <input type="number" id="number" name="nu" required="required" placeholder="House number">
-                        </p>
-                        <p>
-                            <label> payment</label><be>
-                            <select id="payment" name="pay">
-                                <option>Card</option>
-                                <option>Swish</option>
-                                <option selected="selected">  Invoice </option>
-                                <option>Klarna</option>
-
-                            </select> </be>
-                        </p>
-
-                        <p>
-                            <label >Gender</label><br>
-                            <input type="radio" id="female" name="gender" required="required">
-                            <label for="female">Female </label><br>
-                            <input type="radio" id="male" name="gender" required="required">
-                            <label for="male">Male </label><br>
-                            <input type="radio" id="nonbinary" name="gender" required="required">
-                            <label for="nonbinary">Non-binary </label><br>
-                            <input checked="checked" type="radio" id="notprovide" name="gender" required="required" >
-                            <label for="notprovide">Do not wish to provide </label><br>
-
-
-                        </p>
-
-
-
-                    </form>
-            </div>
-
-        </section>
-
-        <button type="send info">
-            <img src="https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787__480.png" style="width: 20px;">
-            Submit the order
-        </button>
-    </main>
-    <hr>
-    <footer>
-        <h7> &copy;</h7>
-    </footer>
-</body>
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
