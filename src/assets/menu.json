@@ -1,0 +1,35 @@
+
+[
+  {
+    "name": "Vilmas Burger",
+    "kCal": 500,
+    "lactose": true,
+    "gluten": false,
+    "price": 145,
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3nEQwZzCdMrsnYce1-ZS7IGc1I08lkWEIRg&usqp=CAU",
+    "meat": true
+
+  },
+
+  {
+    "name": "Halloumi Burger",
+    "kCal": 560,
+    "lactose": true,
+    "gluten": true,
+    "price": 125,
+    "url": "https://gastrogate.com/thumbs/2000/files/31555/bc-burger-highres-10.jpg",
+    "meat": false
+
+  },
+  {
+    "name": "Vegan Burger",
+    "kCal": 560,
+    "lactose": true,
+    "gluten": true,
+    "price": 110,
+    "url": "https://joyfoodsunshine.com/wp-content/uploads/2017/04/black-bean-sweet-potato-veggie-burgers-1x1-1.jpg",
+    "meat": false
+
+  }
+
+]
